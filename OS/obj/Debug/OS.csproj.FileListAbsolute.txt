@@ -12,3 +12,5 @@ C:\Users\1\source\repos\OS\obj\Debug\OS.HelpAndSupport.resources
 C:\Users\1\source\repos\OS\obj\Debug\OS.Calculator.resources
 C:\Users\1\source\repos\OS\obj\Debug\OS.ControlPanel.resources
 C:\Users\1\source\repos\OS\obj\Debug\OS.UserAdd.resources
+C:\Users\1\source\repos\OS\obj\Debug\OS.UserChange.resources
+C:\Users\1\source\repos\OS\obj\Debug\OS.UserDelete.resources

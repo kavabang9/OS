@@ -46,22 +46,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculator.cs">
+    <Compile Include="StartMenu\Calculator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Calculator.Designer.cs">
+    <Compile Include="StartMenu\Calculator.Designer.cs">
       <DependentUpon>Calculator.cs</DependentUpon>
     </Compile>
-    <Compile Include="ControlPanel.cs">
+    <Compile Include="StartMenu\ControlPanel\UserChange.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ControlPanel.Designer.cs">
+    <Compile Include="StartMenu\ControlPanel\UserChange.Designer.cs">
+      <DependentUpon>UserChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartMenu\ControlPanel\ControlPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartMenu\ControlPanel\ControlPanel.Designer.cs">
       <DependentUpon>ControlPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Github.cs">
+    <Compile Include="StartMenu\Github.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Github.Designer.cs">
+    <Compile Include="StartMenu\Github.Designer.cs">
       <DependentUpon>Github.cs</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.cs">
@@ -72,19 +78,25 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserAdd.cs">
+    <Compile Include="StartMenu\ControlPanel\UserAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserAdd.Designer.cs">
+    <Compile Include="StartMenu\ControlPanel\UserAdd.Designer.cs">
       <DependentUpon>UserAdd.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Calculator.resx">
+    <Compile Include="StartMenu\ControlPanel\UserDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartMenu\ControlPanel\UserDelete.Designer.cs">
+      <DependentUpon>UserDelete.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="StartMenu\Calculator.resx">
       <DependentUpon>Calculator.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ControlPanel.resx">
+    <EmbeddedResource Include="StartMenu\ControlPanel\ControlPanel.resx">
       <DependentUpon>ControlPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Github.resx">
+    <EmbeddedResource Include="StartMenu\Github.resx">
       <DependentUpon>Github.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
@@ -99,8 +111,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserAdd.resx">
+    <EmbeddedResource Include="StartMenu\ControlPanel\UserAdd.resx">
       <DependentUpon>UserAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartMenu\ControlPanel\UserChange.resx">
+      <DependentUpon>UserChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartMenu\ControlPanel\UserDelete.resx">
+      <DependentUpon>UserDelete.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -115,5 +133,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
